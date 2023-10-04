@@ -1,0 +1,14 @@
+{
+    "name": "luccas_drapala/php-pro-oo",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Luccas Drapala",
+            "email": "luccasdrapala@gmail.com"
+        }
+    ]
+}
