@@ -1,15 +1,19 @@
 <?php
 
+require '../vendor/autoload.php';
+
+use app\classes\Crud;
 use app\classes\Login;
 
-require '../helpers/autoload.php';
-require '../app/classes/Login.php';
-
 $login = new Login;
+$crud = new Crud;
+
 $login->email = 'luc@luc.luc';
 $login->password = 'luc123';
 
-echo $login->auth();
+// echo $login->auth();
+
+echo $crud->read();
 
 
 
