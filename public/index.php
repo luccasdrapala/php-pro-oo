@@ -5,15 +5,18 @@ require '../vendor/autoload.php';
 use app\classes\Crud;
 use app\classes\Login;
 
-$login = new Login;
-$crud = new Crud;
+$user = ['name' => 'Luccas', 'email' => 'luccasdrapala@gmail.com'];
 
-$login->email = 'luc@luc.luc';
-$login->password = 'luc123';
+$userObj = (object) $user;
 
-// echo $login->auth();
+echo '<pre>';
+    var_dump($userObj->name);
+echo '<pre/><br>';
 
-echo $crud->read();
+$stdClass = new stdClass;
 
+$stdClass->name = "Satanas";
 
-
+echo '<pre>';
+    var_dump($stdClass);
+echo '<pre/><br>';
